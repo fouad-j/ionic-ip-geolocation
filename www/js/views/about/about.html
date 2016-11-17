@@ -1,0 +1,43 @@
+<ion-view view-title="About" id="about">
+  <ion-content class="has-header has-footer">
+
+    <div class="text-center logoAbout"><img src="img/logo.png"></div>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        <p>
+          A simple app that displays the location of your or any other IP address on a map, 
+          together with additional useful data such as:
+        </p>
+        <div class="row">
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>External IP</div>
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>Country</div>
+        </div>
+        <div class="row">
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>Latitude</div>
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>Longitude</div>
+        </div>
+        <div class="row">
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>City</div>
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>Zip Code</div>
+        </div>
+        <div class="row">
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>Timezone</div>
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>ISP</div>
+        </div>
+        <div class="row">
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>Organization</div>
+          <div class="col col-50"><i class="ion-android-arrow-dropright"> </i>AS number/name</div>
+        </div>
+        <p><br />This application is under MIT License and it's available through my GitHub account.</p>
+      </div>
+    </div>
+
+    <ul class="list list-inset">
+      <li class="item"><i class="icon ion-person"></i> {{aboutCtrl.config.AUTHOR.NAME}}</li>
+      <li class="item"><i class="icon ion-at"></i> {{aboutCtrl.config.AUTHOR.EMAIL}}</li>
+      <li class="item"><i class="icon ion-link"></i> {{aboutCtrl.config.AUTHOR.SITE}}</li>
+      <li class="item"><i class="icon ion-social-github"></i> {{aboutCtrl.config.AUTHOR.GITHUB}}</li>
+    </ul>
+  </ion-content>
+</ion-view>

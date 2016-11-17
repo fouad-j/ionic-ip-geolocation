@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="item item-divider text-center">
+    {{mapCtrl.ipInformation.country}}, 
+    {{mapCtrl.ipInformation.countryCode}}
+    </div>
+    <div class="item item-image"><div id="map" data-tap-disabled="true"></div></div>
+    <div class="item item-divider text-center position">
+    <div class="row">
+        <div class="col">
+            <h4 class="calm">Latitude</h4>
+            <h3>{{mapCtrl.ipInformation.lat}}</h3>
+        </div>
+        <div class="col">
+            <h4 class="calm">Longitude</h4>
+            <h3>{{mapCtrl.ipInformation.lon}}</h3>
+        </div>
+    </div>
+    </div>
+</div>
