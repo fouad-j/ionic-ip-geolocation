@@ -2,7 +2,7 @@ angular.module('ipInformation')
   .config(function($stateProvider) {
     $stateProvider.state('about', {
       url: '/about',
-      templateUrl: 'js/views/about/about.html',
+      templateUrl: 'views/about/about.html',
       controller: 'aboutController as aboutCtrl'
     });
   })

@@ -1,0 +1,10 @@
+#home {
+	.position, .position .row{padding: 0px;}
+	.search {
+		background-color: rgba(255,255,255,0.5);
+		border: none;
+	}
+	.button.disabled, .button[disabled]{
+		opacity: 0.6;
+	}
+}

@@ -2,7 +2,7 @@ angular.module('ipInformation')
   .config(function($stateProvider) {
     $stateProvider.state('home', {
       url: '/home',
-      templateUrl: 'js/views/home/home.html',
+      templateUrl: 'views/home/home.html',
       controller: 'homeController as homeCtrl'
     });
   })
@@ -11,15 +11,18 @@ angular.module('ipInformation')
       this.currentIp = this.ipInformation = data;
       loadMap(data.lat, data.lon);
     });
+
     this.submit = form => ipInformation.getIpInformation(this.ipAddress).then(data => {
       this.ipInformation = data;
       loadMap(data.lat, data.lon);
     });
+    
     this.reset = () => {
       this.ipInformation = this.currentIp; 
       this.ipAddress = "";
       loadMap(this.currentIp.lat, this.currentIp.lon);
-    }
+    };
+
     this.appName = CONFIG.NAME;
     
 

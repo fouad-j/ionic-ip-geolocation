@@ -9,5 +9,9 @@ plugins/
 hooks/*
 res/*
 
+www/**
+
 .idea/*
 .vscode/*
+my-release-key.keystore
+signature

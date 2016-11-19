@@ -15,10 +15,19 @@ External IP, Country, Latitude, Longitude, City, Zip Code, Timezone, ISP, Organi
 
 IP information given by this app are provided by this API [ip-api.com](http://ip-api.com/docs/api:json)
 
+## Screenshot
 ![IP Geolocation Screenshot](IpGeolocationScreen.png "IP Geolocation Screenshot")
 
 ## About
 I made this application just for test Ionic so there's no test and no specific build task.
+
+### Run
+```
+npm install
+ionic serve
+```
+
+I'm using gulp to build project, because I prefer to have three files in production (1js 1html and 1css).
 
 ## References
 

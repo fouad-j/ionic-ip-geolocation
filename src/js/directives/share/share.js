@@ -1,6 +1,6 @@
 angular.module('ipInformation')
   .component('share', {
-    templateUrl: 'js/directives/share/share.html',
+    templateUrl: 'directives/share/share.html',
     controller: 'shareController as shareCtrl',
   })
   .controller('shareController', function($cordovaSocialSharing) {
